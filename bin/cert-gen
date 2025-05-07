@@ -5,8 +5,8 @@ set -u
 set -o pipefail
 
 NAME="cert-gen"
-VERSION="v0.10"
-DATE="2022-12-18"
+VERSION="v0.11"
+DATE="2025-05-06"
 
 # Generate default options
 DEF_KEYSIZE=2048
@@ -313,7 +313,6 @@ x509_extensions = v3_req
 basicConstraints = critical, CA:FALSE
 subjectKeyIdentifier = hash
 keyUsage = critical, digitalSignature, keyEncipherment
-authorityKeyIdentifier = keyid:always,issuer:always
 extendedKeyUsage = serverAuth, clientAuth
 subjectAltName=${ALT_NAMES}
 HEREDOC
